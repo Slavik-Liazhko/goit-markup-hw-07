@@ -1,0 +1,104 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.logo-header {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.logo {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+.logo span {
+  color: var(--dark-font-color);
+}
+.logo-footer {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent-color);
+
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.logo-footer span {
+  color: var(--light-font-color);
+}
+.page-navigation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav {
+  display: flex;
+}
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.site-nav__item:not(:last-child),
+.auth-nav__item:not(:last-child) {
+  margin-right: 50px;
+  position: relative;
+}
+.site-nav .site-nav__link {
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: 14px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--dark-font-color);
+  transition: color var(--transition-duration) var(--transition-timing);
+}
+.auth-nav .auth-nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  letter-spacing: 0.02em;
+  color: var(--desc-font-color);
+  fill: currentColor;
+  display: flex;
+  align-items: center;
+  transition: color var(--transition-duration) var(--transition-timing);
+}
+.auth-nav-icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  transition: fill var(--transition-duration) var(--transition-timing);
+  /* fill: var(--desc-font-color); */
+}
+.auth-nav-icon-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  transition: fill var(--transition-duration) var(--transition-timing);
+  /* fill: var(--desc-font-color); */
+}
+.site-nav__link:hover,
+.site-nav__link:focus,
+.site-nav .active,
+.auth-nav .auth-nav__link:hover,
+.auth-nav .auth-nav__link:focus {
+  color: var(--accent-color);
+}
+.auth-nav__link:hover .auth-nav-icon-envelope,
+.auth-nav__link:hover .auth-nav-icon-tel,
+.auth-nav__link:focus .auth-nav-icon-envelope,
+.auth-nav__link:focus .auth-nav-icon-tel {
+  fill: var(--accent-bg-color);
+}
