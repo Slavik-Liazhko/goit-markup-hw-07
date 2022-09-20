@@ -43,9 +43,9 @@
   transition: background-color var(--transition-duration)
     var(--transition-timing);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--accent-bg-color);
-
     cursor: pointer;
   }
 }

@@ -60,16 +60,18 @@
 .our-team-social-link {
   transition: background-color var(--transition-duration)
     var(--transition-timing);
-}
-.our-team-social-link:hover,
-.our-team-social-link:focus {
-  background-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 .our-team-social-icon {
   fill: var(--our-team-sicoal-icon);
   transition: fill var(--transition-duration) var(--transition-timing);
-}
-.our-team-social-link:hover .our-team-social-icon,
-.our-team-social-link:focus .our-team-social-icon {
-  fill: var(--light-font-color);
+
+  .our-team-social-link:hover &,
+  .our-team-social-link:focus & {
+    fill: var(--light-font-color);
+  }
 }
